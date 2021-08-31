@@ -1,17 +1,71 @@
-.navbar ul{
+/* reset all browser user agent settings to default on the webpage: ie "clean slate" */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar stuff */
+.navbar .navbar-ul {
+    /* Remove bullet points for ul */
     list-style-type: none;
+    /* Proper placement and operation for bar */
     margin: 0;
     padding: 0;
     overflow: hidden;
+    /* Fixed position for bar */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* bar decor color */
     background-color: #333;
 }
 
-.navbar li{
+/* navigation elements aligned to standard (left) */
+.navbar li {
+    /* floating list items and padding properly */
     float: left;
+    padding: 10px;
+    color: white;
 }
 
-.navbar li a{
+/* navigation elements aligned to the right */
+
+
+.navbar li a {
+    /* floating list items allowment nad proper padding */
     display: block;
     padding: 8px;
+    /* more bar decor */
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
     background-color: #333;
+}
+
+.navbar li img#search-icon{
+    /* floating list items allowment and proper padding */
+    max-width: 14px;
+    max-height: 14px;
+}
+
+.navbar li img#cart-icon{
+    max-width: 21px;
+    max-height: 21px;
+}
+
+/* logo on navbar fit and placement */
+#logo-main {
+    max-width: 260px;
+    max-height: 48px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 20px;
+    background-color: rgb(17, 187, 2);
+}
+
+/* (The real) body contents of pages */
+.body {
+    /* aligns body text to center */
+    text-align: center;
 }
