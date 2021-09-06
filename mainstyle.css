@@ -1,71 +1,78 @@
-/* reset all browser user agent settings to default on the webpage: ie "clean slate" */
-* {
+/* reset all browser user agent settings to blank on webpage */
+*  {
     margin: 0;
     padding: 0;
 }
 
-/* navbar stuff */
-.navbar .navbar-ul {
-    /* Remove bullet points for ul */
+/* navbar styling */
+ul.navbar {
     list-style-type: none;
-    /* Proper placement and operation for bar */
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    /* Fixed position for bar */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    /* bar decor color */
-    background-color: #333;
-}
-
-/* navigation elements aligned to standard (left) */
+    background-color: #181818;
+  }
+  
 .navbar li {
-    /* floating list items and padding properly */
-    float: left;
-    padding: 10px;
-    color: white;
+  float: left;
 }
-
-/* navigation elements aligned to the right */
-
 
 .navbar li a {
-    /* floating list items allowment nad proper padding */
-    display: block;
-    padding: 8px;
-    /* more bar decor */
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: center;
-    background-color: #333;
+  display: inline-block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.navbar li img#search-icon{
-    /* floating list items allowment and proper padding */
-    max-width: 14px;
-    max-height: 14px;
+.navbar input[type=text] {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  font-size: 17px;
 }
 
-.navbar li img#cart-icon{
-    max-width: 21px;
-    max-height: 21px;
+.navbar button {
+  padding: 6px;
+  margin: 8px 16px 0 0;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
 }
 
-/* logo on navbar fit and placement */
-#logo-main {
-    max-width: 260px;
-    max-height: 48px;
-    float: left;
-    margin-right: 10px;
-    margin-left: 20px;
-    background-color: rgb(17, 187, 2);
+.navbar li#rightFloat {
+    float: right;
 }
 
-/* (The real) body contents of pages */
-.body {
-    /* aligns body text to center */
-    text-align: center;
+.navbar li a img {
+  max-width: 120px;
+  height: auto;
+}
+
+/* The highlights, or "actives" of the page */
+.active {
+  background-color: #34aa2f;
+}
+
+/* body styling */
+body {
+  background-color: #252525;
+}
+
+body p,a,h1,h2,h3,h4,h5,h6 {
+  color: whitesmoke;
+  padding: 16px 0px 8px 16px;
+}
+
+/* Footer styling */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #181818;
+  color: whitesmoke;
+  text-align: center;
+  padding: 6px 0 6px 0;
 }
