@@ -65,11 +65,17 @@ body p,a,h1,h2,h3,h4,h5,h6 {
   color: whitesmoke;
   padding: 16px 0px 8px 16px;
 }
+
 /* title font icing for headers */
 body h1, h2, h3, h4, h5, h6 {
   font-family: 'Press Start 2P', cursive;
   /* text shadow; syntax: 1st font, 2nd font, blur, color */
   text-shadow: 5px, 5px;
+}
+
+/* Hover effect over links */
+a:hover {
+  color: #34aa2f;
 }
 
 /* Animation */
