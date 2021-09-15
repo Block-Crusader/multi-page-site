@@ -89,6 +89,23 @@ div.animation {
   animation-direction: alternate;
 }
 
+/* OVERRIDE-BOOTSTRAP */
+/* OB Header */
+div.dropdown-menu {
+  color:whitesmoke;
+  background-color: #181818;
+}
+/* OB Header (logo) */
+img.logo {
+  max-height: 20px;
+}
+/* OB Container Theme */
+div.container {
+  color:whitesmoke;
+  background-color: #181818;
+}
+
+/* Animation */
 @keyframes color-change {
   from {background-color: green;}
   to {background-color: purple;}

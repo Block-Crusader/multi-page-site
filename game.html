@@ -3,55 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Minecraft</title>
+    <!-- Bootstrap CDN CSS Stuff -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Google fonts stuff-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <!-- Link to main CSS stylesheet-->
+    <!-- Main CSS stylesheet-->
     <link rel="stylesheet" href="./mainstyle.css">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <nav>
-        <ul class="navbar">
-            <li><a class="active" href="#home"><img src="logo.svg" alt="Minecraft logo"></a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="game.html">Game</a></li>
-            <li><a href="community.html">Community</a></li>
-            <li><a href="store.html">Store<i class="fa fa-fw fa-shopping-cart"></i></a></li>
-            <li><input type="text" placeholder="ALFRED?"></li>
-            <button type="submit"><i class="fa fa-search"></i></button>
-            <li id="rightFloat"><a href="#about">[Register]</a></li>
-            <li id="rightFloat"><a href="#about">Log in</a></li>
-        </ul>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #181818;">
+        <a class="navbar-brand" href="#">Minecraft</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="game.html">Game</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </a>
+                <!-- Bootstrap Header (with title!) -->
+                <div class="dropdown-menu">
+                    <h6 class="dropdown-header">EPIC MENU</h6>
+                    <a class="dropdown-item" href="community.html">Community</a>
+                    <a class="dropdown-item" href="#">Another EPIC action</a>
+                </div>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
     </nav>
 
+    <!-- The actual "writers defintion" of an body, or what goes into a "body" of an essay -->
     <div class="body-body">
-        <h1>What is "Minecraft"?</h1>
-        <p> Minecraft is a 2011 sandbox video game originally created by Swedish programmer Markus "Notch" Persson and later developed and published by Mojang.
-            The creative and building aspects of Minecraft enable players to build constructions out of textured cubes in a 3D procedurally generated world.
-        </p>
-        <p> Multiple gameplay modes are available, including survival mode where the player must acquire resources to build the world and maintain health,
-            a creative mode where players have unlimited resources to build with and the ability to fly,
-            an adventure mode where players can play custom maps created by other players,
-            and a spectator mode where players can fly around and clip through blocks, but cannot place or destroy any.
-        </p>
-        <p> The PC version of the game is renowned for its third-party mods, which add various new items, characters, worlds, and quests to the game.
-            Minecraft received five awards during the 2011 Game Developers Conference.
-        </p>
-        <p> Of the Game Developers Choice Awards, it won the Innovation Award, Best Downloadable Game Award, and Best Debut Game Award;
-            from the Independent Games Festival, it won the Audience Award and the Seumas McNally Grand Prize. In 2012, Minecraft was awarded a Golden Joystick Award in the category Best Downloadable Game.
-            As of June 2015, over 70 million copies had been sold, including 20 million between the Xbox 360 and Xbox One, 30 million mobile game downloads, and 20 million on PC,
-            making it the best-selling PC game to date and the third best-selling video game of all time.
-            On 15 September 2014, Microsoft announced a deal to buy Mojang and the Minecraft intellectual property for US$2.5 billion; the acquisition was completed on 6 November 2014.
-        </p>
+        <!-- Bootstrap Grid -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <p> Minecraft is a 2011 sandbox video game originally created by Swedish programmer Markus "Notch" Persson and later developed and published by Mojang.
+                The creative and building aspects of Minecraft enable players to build constructions out of textured cubes in a 3D procedurally generated world.
+            </p>
+            <p> Multiple gameplay modes are available, including survival mode where the player must acquire resources to build the world and maintain health,
+                a creative mode where players have unlimited resources to build with and the ability to fly,
+                an adventure mode where players can play custom maps created by other players,
+                and a spectator mode where players can fly around and clip through blocks, but cannot place or destroy any.
+            </p>
+          </div>
+          <div class="col-sm">
+            <p> The PC version of the game is renowned for its third-party mods, which add various new items, characters, worlds, and quests to the game.
+                Minecraft received five awards during the 2011 Game Developers Conference.
+            </p>
+          </div>
+          <div class="col-sm">
+            <p> Of the Game Developers Choice Awards, it won the Innovation Award, Best Downloadable Game Award, and Best Debut Game Award;
+                from the Independent Games Festival, it won the Audience Award and the Seumas McNally Grand Prize. In 2012, Minecraft was awarded a Golden Joystick Award in the category Best Downloadable Game.
+                As of June 2015, over 70 million copies had been sold, including 20 million between the Xbox 360 and Xbox One, 30 million mobile game downloads, and 20 million on PC,
+                making it the best-selling PC game to date and the third best-selling video game of all time.
+                On 15 September 2014, Microsoft announced a deal to buy Mojang and the Minecraft intellectual property for US$2.5 billion; the acquisition was completed on 6 November 2014.
+            </p>
+          </div>
+      </div>
     </div>
     
-    <footer>
-        <p>Local gamer girls in your area!</p>
-    </footer>
+    <!-- Bootstrap Footer -->
+    <nav class="navbar fixed-bottom navbar-dark" style="background-color: #181818;">
+        <a class="navbar-brand" href="#">Mighty fine block you got there, Son!</a>
+    </nav>
+
+    <!-- Bootstap CDN JavaScript stuff -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
